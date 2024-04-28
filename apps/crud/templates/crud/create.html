@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹툰 목록에 추가</title>
+</head>
+<body>
+    <h2>웹툰 목록에 추가하기</h2>
+    <form
+        action="{{ url_for('crud.create_toon') }}"
+        method="POST"
+        novalidate="novalidate"
+    >
+    {{ form.csrf_token }}
+    <p>
+        {{ form.title.label }} {{ form.title(placeholder="제목") }}
+    </p>
+    {% for error in form.title.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    <p>
+        {{ form.author.label }} {{ form.author(placeholder="작가") }}
+    </p>
+    {% for error in form.author.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    <p>
+        {{ form.genre.label }} {{ form.genre(placeholder="장르") }}
+    </p>
+    {% for error in form.genre.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    <p>
+        {{ form.link.label }} {{ form.link(placeholder="링크주소") }}
+    </p>
+    {% for error in form.link.errors %}
+    <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    <p>{{ form.submit() }}</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹툰 목록</title>
+    <link rel="stylesheet" href="{{ url_for('crud.static', filename='style.css')}}"
+</head>
+<body>
+    <h2>웹툰 목록</h2>
+    <a href="{{ url_for('crud.create_toon') }}">새로운 웹툰 추가</a>
+
+    <table>
+        <tr>
+            <th>제 목</th>
+            <th>작 가</th>
+            <th>장 르</th>
+            <th>링크주소</th>
+        </tr>
+        {% for toon in toons %}
+        <tr>
+            <th>{{ toon.title }}</th>
+            <th>{{ toon.author }}</th>
+            <th>{{ toon.genre }}</th>
+            <th>{{ toon.link }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

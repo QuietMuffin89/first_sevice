@@ -21,5 +21,5 @@ class Userform(FlaskForm):
         validators=[DataRequired(message="링크주소를 적어주세요")],
     )
 
-    submit = SubmitField("목록에 추가")
+    submit = SubmitField("UpDate!")
     

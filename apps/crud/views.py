@@ -20,26 +20,52 @@ def sql():
     db.session.query(User).all()
     return "콘솔 로그를 확인해주세요"
 
-@crud.route("/toons/new", methods=["GET", "POST"])
-def create_toon():
+@crud.route("/users/new", methods=["GET", "POST"])
+def create_user():
     form = Userform()
 
     if form.validate_on_submit():
-        toon = User(
+        user = User(
             title = form.title.data,
             author = form.author.data,
             genre = form.genre.data,
             link = form.link.data,
         )
-        db.session.add(toon)
+        db.session.add(user)
         db.session.commit()
 
-        return redirect(url_for("crud.toons"))
+        return redirect(url_for("crud.users"))
     
     return render_template("crud/create.html", form=form)
 
-@crud.route("/toons")
-def toons():
+@crud.route("/users")
+def users():
 
-    toons = User.query.all()
-    return render_template("crud/index.html", toons=toons)
+    users = User.query.all()
+    return render_template("crud/index.html", users=users)
+
+@crud.route("/users/<user_id>", methods=["GET", "POST"])
+def edit_user(user_id):
+    form = Userform()
+
+    user = User.query.filter_by(id=user_id).first()
+
+    if form.validate_on_submit():
+        # user.id = form.id.data
+        user.title = form.title.data
+        user.author = form.autor.data
+        user.genre = form.genre.data
+        user.link = form.link.data
+
+        db.session.add(user)
+        db.session.commit()
+        return redirect(url_for("crud.users"))
+    
+    return render_template("crud/edit.html", user=user, form=form)
+
+@crud.route("/users/<user_id>/delete", methods=["POST"])
+def delete_user(user_id):
+    user = User.query.filter_by(id=user_id).first()
+    db.session.delete(user)
+    db.session.commit()
+    return redirect(url_for("crud.users"))

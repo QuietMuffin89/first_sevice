@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="index" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹툰 목록</title>
     <link rel="stylesheet" href="{{ url_for('crud.static', filename='style.css')}}"
 </head>
-<body>
-    <h2>웹툰 목록</h2>
-    <a href="{{ url_for('crud.create_toon') }}">새로운 웹툰 추가</a>
+<body class="toonlist">
+    <h1 class="hh2">˝ MY WEBTOONS ˝</h1>
+    <a class="newtoon" href="{{ url_for('crud.create_user') }}">★ADD New WebToon★</a>
 
     <table>
         <tr>
-            <th>제 목</th>
-            <th>작 가</th>
-            <th>장 르</th>
-            <th>링크주소</th>
+            <th>N   O</th>
+            <th>T I T L E</th>
+            <th>A U T H O R</th>
+            <th>G E N R E</th>
+            <th>L I N K</th>
         </tr>
-        {% for toon in toons %}
+        {% for user in users %}
         <tr>
-            <th>{{ toon.title }}</th>
-            <th>{{ toon.author }}</th>
-            <th>{{ toon.genre }}</th>
-            <th>{{ toon.link }}</th>
+            <td>
+                <a href="{{ url_for('crud.edit_user', user_id=user.id) }}">{{ user.id }}</a>
+            </td>
+            <td>{{ user.title }}</td>
+            <td>{{ user.author }}</td>
+            <td>{{ user.genre }}</td>
+            <td>
+                <a href="{{ user.link }}">click!!</a>
+            </td>
         </tr>
         {% endfor %}
     </table>

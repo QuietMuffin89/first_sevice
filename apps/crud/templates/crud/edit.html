@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="edit1" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 편집</title>
+    <link rel="stylesheet" href="{{ url_for('crud.static', filename='style.css') }}"
+</head>
+<body class="editbody">
+    <div class="div">
+    <h1 class="edit">Edit  List</h1>
+
+    <form class="editform" style="display: inline-block;"
+        action="{{ url_for('crud.edit_user', user_id=user.id) }}"
+        method="POST"
+        novalidate="novalidate"
+        >
+        {{ form.csrf_token }}
+        <p class="editp">
+            {{ form.title.label }} {{ form.title(placeholder="제목") }}
+        </p>
+        {% for error in form.title.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+        <p class="editp">
+            {{ form.author.label }} {{ form.author(placeholder="작가") }}
+        </p>
+        {% for error in form.author.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+        <p class="editp">
+            {{ form.genre.label }} {{ form.genre(placeholder="장르") }}
+        </p>
+        {% for error in form.genre.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+        <p class="editp">
+            {{ form.link.label }} {{ form.link(placeholder="링크주소") }}
+        </p>
+        {% for error in form.link.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+        <p><input type="submit" value="UpDate!"</p>
+    </form>
+    <form 
+        action="{{ url_for('crud.delete_user', user_id=user.id) }}" method="POST">
+        {{ form.csrf_token }}
+        <input type="submit" value="Delete!" >
+    </form>
+</div>
+        
+</body>
+</html>

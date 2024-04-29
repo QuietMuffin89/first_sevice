@@ -16,49 +16,56 @@ table{
     border-collapse: collapse;
 }
 table,th,td{
-    border: 3px dashed rgb(104, 107, 248);
+    border: 2px solid rgb(183, 184, 242);
     /* width: 650px; */
-    text-align: center;
-    border-radius: 5px;
+    text-align: auto;
+    border-radius: 20px;
 }
 .listupform{
-    color: rgb(167, 218, 250);
+    color: rgb(183, 255, 89);
     font-weight: bolder;
 }
 
 .toonlist{
-    position:relative;
+    position:absolute;
     top: 30%;
-    left: 60%;
+    left: 55%;
     transform: translate(-50%, -50%);
     font-family: 'DOSPilgiMedium';
     width: 50%;
     height: auto;
-    color: rgb(234, 76, 86);
+    color: rgb(0, 123, 255);
+    text-align: center;
     
 }
 .hh2{
-    /* text-align: center; */
+    text-align: center;
     font-family: 'WagleWagle';
     font-size: 80px;
     font-style: italic;
     width: 500px;
     color: rgb(255, 71, 71);
+    position: relative;
+    left: -35px;
     
 }
 .newtoon{
-    /* text-align: center; */
-    font-size: 20px;
-    color: rgb(8, 136, 255);
+    position: relative;
+    text-align: left;
+    font-size: 28px;
+    color: rgb(255, 142, 100);
+    width: 400px;
+    left: -50px;
+    
 }
 .index{
     background-image: url("./ddd.jfif");
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
-    height: 90%;
+    height: 100%;
     font-weight: bold;
-    /* text-align: center; */
+    text-align: center;
 }
 .edit1{
     background-color: aliceblue;
@@ -75,19 +82,19 @@ table,th,td{
     color: rgb(0, 0, 0);
 }
 .create{
-    background-color: rgb(197, 178, 178);
+    background-color: rgb(255, 238, 238);
 }
 .listupform{
-    border: 3px dashed rgb(255, 71, 58);
+    border: 0px dashed rgb(255, 71, 58);
     box-sizing: border-box;
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 .cp{
     width: 500px;
-    margin: 20px;
-    padding: 30px;
-    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
 }
 
 .edit{
@@ -130,7 +137,7 @@ table,th,td{
 }
 .editform{
     
-    border: 3px solid rgb(215, 89, 89);
+    border: 0px solid rgb(215, 89, 89);
     padding: 5px;
     box-sizing: border-box;
     font-family: waglewagle;
@@ -139,12 +146,23 @@ table,th,td{
 }
 .editp{
     border: 2px double rgb(215, 89, 89);
-    width: 400px;
+    width: 350px;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 10px;
 }
+/* .editp::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0; 
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid rgb(254, 229, 77);
+} */
 a{
     font-family: waglewagle;
     font-size: 30px;
-    color: rgb(154, 255, 2);
+    color: rgb(213, 255, 150);
 }

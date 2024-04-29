@@ -14,12 +14,16 @@
 
 table{
     border-collapse: collapse;
+    text-align: center;
+    
+    
 }
 table,th,td{
     border: 2px solid rgb(183, 184, 242);
     /* width: 650px; */
-    text-align: auto;
+    text-align: center;
     border-radius: 20px;
+   
 }
 .listupform{
     color: rgb(183, 255, 89);
@@ -29,13 +33,14 @@ table,th,td{
 .toonlist{
     position:absolute;
     top: 30%;
-    left: 55%;
+    left: 60%;
     transform: translate(-50%, -50%);
     font-family: 'DOSPilgiMedium';
     width: 50%;
     height: auto;
-    color: rgb(0, 123, 255);
+    color: rgb(255, 254, 215);
     text-align: center;
+
     
 }
 .hh2{
@@ -44,16 +49,16 @@ table,th,td{
     font-size: 80px;
     font-style: italic;
     width: 500px;
-    color: rgb(255, 71, 71);
+    color: rgb(255, 247, 247);
     position: relative;
-    left: -35px;
+    left: -40px;
     
 }
 .newtoon{
     position: relative;
     text-align: left;
     font-size: 28px;
-    color: rgb(255, 142, 100);
+    color: rgb(255, 240, 234);
     width: 400px;
     left: -50px;
     
@@ -65,7 +70,7 @@ table,th,td{
     background-repeat: no-repeat;
     height: 100%;
     font-weight: bold;
-    text-align: center;
+    text-align:center;
 }
 .edit1{
     background-color: aliceblue;

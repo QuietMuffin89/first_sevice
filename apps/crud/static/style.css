@@ -24,11 +24,12 @@
 }
 
 table{
+
     border-collapse: collapse;
     text-align: center;
     position: relative;
     left: -200px;
-    font-family: 'MoiraiOne-Regular';
+    font-family: 'WagleWagle';
     
     
 }
@@ -44,7 +45,7 @@ table,th,td{
    
 }
 .listupform{
-    color: rgb(255, 57, 57);
+    color: rgb(249, 112, 112);
     font-weight: bolder;
 }
 
@@ -53,12 +54,12 @@ table,th,td{
     top: 30%;
     left: 60%;
     transform: translate(-50%, -50%);
-    font-family: 'MoiraiOne-Regular';
+    font-family: 'OKDDUNG';
     font-size: 25px;
     font-weight: bold;
     width: 50%;
     height: auto;
-    color: rgb(255, 51, 0);
+    color: rgba(255, 42, 42, 0.747);
     text-align: center;
 
     
@@ -109,12 +110,12 @@ table,th,td{
     font-size: 50px;
     font-family: 'MoiraiOne-Regular';
     font-style: italic;
-    color: rgb(254, 213, 213);
+    color: rgb(249, 112, 112);
     width: 800px;
     text-align: center;
     font-weight: bold;
     position: relative;
-    left: -50px;
+    left: -60px;
     padding: 10px;
 }
 .create{
@@ -215,8 +216,9 @@ a{
     font-size: 20px;
     font-family: 'MoiraiOne-Regular';
     font-weight: bold;
-    border: 1px double blanchedalmond;
+    border: 1px double rgb(78, 181, 250);
     text-align: center;
+    border-radius: 10px;
 }
 .addsubmit{
     border: 2px dashed rgb(187, 236, 255);

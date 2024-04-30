@@ -40,9 +40,9 @@
         {% for error in form.link.errors %}
         <span style="color: red;">{{ error }}</span>
         {% endfor %}
-        <p><input class="in" type="submit" value="UpDate!"></p>
+        <p class="p1"><input class="in" type="submit" value="UpDate!"></p>
     </form>
-    <form 
+    <form
         action="{{ url_for('crud.delete_user', user_id=user.id) }}" method="POST">
         {{ form.csrf_token }}
         <input class="in" type="submit" value="Delete!" >

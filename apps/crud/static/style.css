@@ -89,14 +89,14 @@ table,th,td{
     font-family: 'DOSPilgiMedium';
 }
 .listup{
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'DOSPilgiMedium';
     font-style: italic;
     color: rgb(0, 0, 0);
-    width: 500px;
+    width: 800px;
     text-align: center;
     position: relative;
-    left: 100px;
+    left: -50px;
     padding: 20px;
 }
 .create{
@@ -108,13 +108,17 @@ table,th,td{
     width: 700px;
     height: 400px;
     text-align: center;
+    position: relative;
+    left: -150px;
 }
 .cp{
     text-align: center;
     width: 500px;
     margin: 10px;
-    padding: 40px;
+    padding: 20px;
     font-size: 30px;
+    position: inherit;
+    left: 200px;
 }
 .cpclass{
     font-family: 'DOSPilgiMedium';
@@ -130,7 +134,8 @@ table,th,td{
     font-family: 'DOSPilgiMedium';
     font-size: 100px;
     text-align: center;
-    color: rgb(255, 145, 106);
+    color: rgb(252, 123, 76);
+    margin-bottom: 10px;
     
 }
 .editbody{
@@ -167,7 +172,7 @@ table,th,td{
 .editform{
     
     border: 0px solid rgb(215, 89, 89);
-    padding: 5px;
+    padding-bottom: 30px;
     box-sizing: border-box;
     font-family: waglewagle;
     font-size: 35px;
@@ -187,7 +192,7 @@ a{
     color: rgb(255, 227, 150);
 }
 .input{
-    background-color: aliceblue;
+    background-color: rgb(224, 240, 255);
     font-size: 20px;
     font-family: 'DOSPilgiMedium';
     border: 1px double blanchedalmond;
@@ -201,9 +206,17 @@ a{
     font-family: 'DOSPilgiMedium';
     position: relative;
     bottom: 10px;
+    font-style: italic;
+}
+.p1{
+    margin-bottom: 4px;
+    margin-top: 5px;
 }
 .pp{
     margin: 0;
+    position: relative;
+    left: 150px;
+    padding: 20px;
 }
 .in{
     font-family: 'DOSPilgiMedium';
@@ -212,4 +225,5 @@ a{
     border-radius: 10px;
     font-size: 25px;
     font-style: italic;
+    
 }

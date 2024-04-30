@@ -15,6 +15,8 @@
 table{
     border-collapse: collapse;
     text-align: center;
+    position: relative;
+    left: -200px;
     
     
 }
@@ -23,10 +25,14 @@ table,th,td{
     /* width: 650px; */
     text-align: center;
     border-radius: 20px;
+    width: 800px;
+    height: 30px;
+    position: relative;
+    
    
 }
 .listupform{
-    color: rgb(183, 255, 89);
+    color: rgb(255, 57, 57);
     font-weight: bolder;
 }
 
@@ -38,7 +44,7 @@ table,th,td{
     font-family: 'DOSPilgiMedium';
     width: 50%;
     height: auto;
-    color: rgb(255, 254, 215);
+    color: rgb(188, 39, 39);
     text-align: center;
 
     
@@ -46,21 +52,22 @@ table,th,td{
 .hh2{
     text-align: center;
     font-family: 'WagleWagle';
-    font-size: 80px;
+    font-size: 100px;
     font-style: italic;
-    width: 500px;
-    color: rgb(255, 247, 247);
+    width: 700px;
+    color: rgb(166, 8, 8);
     position: relative;
-    left: -40px;
+    left: -150px;
+    margin-top: 200px;
     
 }
 .newtoon{
     position: relative;
     text-align: left;
-    font-size: 28px;
-    color: rgb(255, 240, 234);
+    font-size: 35px;
+    color: rgb(41, 253, 161);
     width: 400px;
-    left: -50px;
+    left: -360px;
     
 }
 .index{
@@ -74,6 +81,7 @@ table,th,td{
 }
 .edit1{
     background-color: aliceblue;
+    
 }
 
 .createbody{
@@ -85,6 +93,11 @@ table,th,td{
     font-family: 'DOSPilgiMedium';
     font-style: italic;
     color: rgb(0, 0, 0);
+    width: 500px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    padding: 20px;
 }
 .create{
     background-color: rgb(255, 238, 238);
@@ -92,14 +105,25 @@ table,th,td{
 .listupform{
     border: 0px dashed rgb(255, 71, 58);
     box-sizing: border-box;
-    width: 500px;
+    width: 700px;
     height: 400px;
+    text-align: center;
 }
 .cp{
+    text-align: center;
     width: 500px;
     margin: 10px;
-    padding: 20px;
+    padding: 40px;
+    font-size: 30px;
+}
+.cpclass{
+    font-family: 'DOSPilgiMedium';
     font-size: 25px;
+    border: 2px double beige;
+    background-color: rgb(255, 242, 226);
+    border-radius: 10px;
+    color: rgb(162, 159, 153);
+    text-align: center;
 }
 
 .edit{
@@ -118,12 +142,12 @@ table,th,td{
     background-image: url("./재환.png");
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 5%;
-    margin: auto; /* 수평 가운데 정렬 */
+    width: 60%;
+    height: 60%;
+    margin-top: -50px; /* 수평 가운데 정렬 */
     position:relative; /* 위치 지정을 위해 절대 위치 지정 */
     top: 0; /* 화면 상단을 기준으로 정렬 */
-    left: 0; /* 화면 좌측을 기준으로 정렬 */
+    left: 300px; /* 화면 좌측을 기준으로 정렬 */
     bottom: 0; /* 화면 하단을 기준으로 정렬 */
     right: 0; /* 화면 우측을 기준으로 정렬 */
 }
@@ -146,28 +170,46 @@ table,th,td{
     padding: 5px;
     box-sizing: border-box;
     font-family: waglewagle;
-    font-size: 30px;
+    font-size: 35px;
     color: rgb(255, 234, 234);
 }
 .editp{
     border: 2px double rgb(215, 89, 89);
     width: 350px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10px;
 }
-/* .editp::after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: -10px;
-    width: 0;
-    height: 0; 
-    border-bottom: 16px solid transparent;
-    border-left: 16px solid rgb(254, 229, 77);
-} */
+
 a{
     font-family: waglewagle;
     font-size: 30px;
-    color: rgb(213, 255, 150);
+    color: rgb(255, 227, 150);
+}
+.input{
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: 'DOSPilgiMedium';
+    border: 1px double blanchedalmond;
+    text-align: center;
+}
+.addsubmit{
+    border: 2px dashed rgb(187, 236, 255);
+    background-color: rgb(195, 238, 255);
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'DOSPilgiMedium';
+    position: relative;
+    bottom: 10px;
+}
+.pp{
+    margin: 0;
+}
+.in{
+    font-family: 'DOSPilgiMedium';
+    border: 1px solid rgb(208, 242, 255);
+    background-color: rgb(208, 242, 255);
+    border-radius: 10px;
+    font-size: 25px;
+    font-style: italic;
 }

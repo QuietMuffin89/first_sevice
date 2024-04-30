@@ -17,32 +17,32 @@
     >
     {{ form.csrf_token }}
     <p class="cp">
-        {{ form.title.label }} {{ form.title(placeholder="제목") }}
+        {{ form.title.label }} {{ form.title(class="cpclass", placeholder="제목") }}
     </p>
     {% for error in form.title.errors %}
     <span style="color: red;">{{ error }}</span>
     {% endfor %}
     <p class="cp">
-        {{ form.author.label }} {{ form.author(placeholder="작가") }}
+        {{ form.author.label }} {{ form.author(class="cpclass",placeholder="작가") }}
     </p>
     {% for error in form.author.errors %}
     <span style="color: red;">{{ error }}</span>
     {% endfor %}
     <p class="cp">
-        {{ form.genre.label }} {{ form.genre(placeholder="장르") }}
+        {{ form.genre.label }} {{ form.genre(class="cpclass",placeholder="장르") }}
     </p>
     {% for error in form.genre.errors %}
     <span style="color: red;">{{ error }}</span>
     {% endfor %}
     <p class="cp">
-        {{ form.link.label }} {{ form.link(placeholder="링크주소") }}
+        {{ form.link.label }} {{ form.link(class="cpclass",placeholder="링크주소") }}
     </p>
     {% for error in form.link.errors %}
     <span style="color: red;">{{ error }}</span>
     {% endfor %}
      
-    <p class="addsubmit">{{ form.submit() }}</p>
+    <p class="pp"><input class="addsubmit" type="submit" value="UpDate!"></p>
 </form>
-</div>
+</div> 
 </body>
 </html>

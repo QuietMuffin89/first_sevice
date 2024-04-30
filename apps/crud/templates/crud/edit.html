@@ -17,35 +17,35 @@
         >
         {{ form.csrf_token }}
         <p class="editp">
-            {{ form.title.label }} {{ form.title(placeholder="제목") }}
+            {{ form.title.label }} {{ form.title(class="input",  placeholder="제목") }}
         </p>
         {% for error in form.title.errors %}
         <span style="color: red;">{{ error }}</span>
         {% endfor %}
         <p class="editp">
-            {{ form.author.label }} {{ form.author(placeholder="작가") }}
+            {{ form.author.label }} {{ form.author(class="input",placeholder="작가") }}
         </p>
         {% for error in form.author.errors %}
         <span style="color: red;">{{ error }}</span>
         {% endfor %}
         <p class="editp">
-            {{ form.genre.label }} {{ form.genre(placeholder="장르") }}
+            {{ form.genre.label }} {{ form.genre(class="input",placeholder="장르") }}
         </p>
         {% for error in form.genre.errors %}
         <span style="color: red;">{{ error }}</span>
         {% endfor %}
         <p class="editp">
-            {{ form.link.label }} {{ form.link(placeholder="링크주소") }}
+            {{ form.link.label }} {{ form.link(class="input",placeholder="링크주소") }}
         </p>
         {% for error in form.link.errors %}
         <span style="color: red;">{{ error }}</span>
         {% endfor %}
-        <p><input type="submit" value="UpDate!"</p>
+        <p><input class="in" type="submit" value="UpDate!"></p>
     </form>
     <form 
         action="{{ url_for('crud.delete_user', user_id=user.id) }}" method="POST">
         {{ form.csrf_token }}
-        <input type="submit" value="Delete!" >
+        <input class="in" type="submit" value="Delete!" >
     </form>
 </div>
         
